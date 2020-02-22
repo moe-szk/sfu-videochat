@@ -1,0 +1,131 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@mipmap/orenge2"
+	android:keepScreenOn="true"
+	tools:context="com.ntt.ecl.webrtc.sample_sfu_videochat.MainActivity">
+
+
+	<Button
+		android:id="@+id/btnAction"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16dp"
+		android:layout_marginRight="16dp"
+		android:text="Join Room"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<GridView
+		android:id="@+id/grdRemote"
+		android:layout_width="378dp"
+		android:layout_height="414dp"
+		android:layout_marginLeft="16dp"
+		android:layout_marginTop="8dp"
+		android:layout_marginRight="16dp"
+		android:layout_marginBottom="8dp"
+		android:numColumns="2"
+		app:layout_constraintBottom_toTopOf="@+id/svLocalView"
+		app:layout_constraintHorizontal_bias="1.0"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/txRoomName"
+		app:layout_constraintVertical_bias="0.35" />
+
+	<view
+		android:id="@+id/svLocalView"
+		class="io.skyway.Peer.Browser.Canvas"
+		android:layout_width="145dp"
+		android:layout_height="133dp"
+		android:layout_marginRight="16dp"
+		android:layout_marginBottom="116dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintRight_toRightOf="parent" />
+
+	<Button
+		android:id="@+id/switchCameraAction"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="16dp"
+		android:layout_marginTop="34dp"
+		android:text="Switch Camera"
+		app:layout_constraintBottom_toTopOf="@+id/tvOwnId"
+		app:layout_constraintEnd_toStartOf="@+id/buttonreset"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/button_start_pause"
+		app:layout_constraintVertical_bias="0.487" />
+
+	<EditText
+		android:id="@+id/txRoomName"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="16dp"
+		android:layout_marginTop="16dp"
+		android:layout_marginRight="8dp"
+		android:ems="10"
+		android:hint="Room name"
+		android:inputType="text"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toLeftOf="@+id/btnAction"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<TextView
+		android:id="@+id/tvOwnId"
+		android:layout_width="wrap_content"
+		android:layout_height="0dp"
+		android:layout_marginLeft="8dp"
+		android:layout_marginTop="180dp"
+		android:layout_marginEnd="140dp"
+		android:focusable="true"
+		android:focusableInTouchMode="true"
+		android:text="ID: - "
+		android:textColor="@android:color/white"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="1.0"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toLeftOf="@+id/svLocalView"
+		app:layout_constraintTop_toBottomOf="@+id/grdRemote">
+
+		<requestFocus />
+	</TextView>
+
+	<TextView
+		android:id="@+id/text_view_countdown"
+		android:layout_width="209dp"
+		android:layout_height="86dp"
+		android:text="00:00"
+		android:textSize="80sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.086"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.774" />
+
+	<Button
+		android:id="@+id/button_start_pause"
+		android:layout_width="90dp"
+		android:layout_height="34dp"
+		android:layout_marginTop="520dp"
+		android:text="@string/Start"
+		app:layout_constraintEnd_toStartOf="@+id/buttonreset"
+		app:layout_constraintHorizontal_bias="0.285"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/grdRemote" />
+
+	<Button
+		android:id="@+id/buttonreset"
+		android:layout_width="88dp"
+		android:layout_height="37dp"
+		android:layout_marginTop="520dp"
+		android:text="@string/reset"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.452"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/grdRemote"
+		tools:ignore="HardcodedText" />
+
+</android.support.constraint.ConstraintLayout>

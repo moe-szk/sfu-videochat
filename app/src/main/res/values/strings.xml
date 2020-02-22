@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Sample-sfu-videochat</string>
+    <string name="title_activity_video_chat">SfuVideoChat</string>
+    <string name="Start">スタート</string>
+    <string name="reset">リセット</string>
+    <string name="_00_00">_00_00</string>
+    <string name="_00_0">00:00</string>
+</resources>

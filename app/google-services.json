@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "414631990650",
+    "firebase_url": "https://finaltest-48bfd.firebaseio.com",
+    "project_id": "finaltest-48bfd",
+    "storage_bucket": "finaltest-48bfd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:414631990650:android:b13e3e041cf21437ca32c3",
+        "android_client_info": {
+          "package_name": "com.company.finaltest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "414631990650-06sif0hm2cedog26220to05gaqa5h5uj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOF4qPV9XITyhDlHZk1z32fLKvaMugGy0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "414631990650-06sif0hm2cedog26220to05gaqa5h5uj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
